@@ -1,0 +1,23 @@
+import java.util.List;
+public class ShoppingCartPriceCalculator {
+    public record Item(double price, int qty) {}
+    public double calculateTotal(List<Item> items) {
+        if (items == null || items.isEmpty()) return 0.0;
+        double total = 0.0;
+        for (Item item : items) {
+            total += item.price() * item.qty();
+        }
+        if (total > 500.0) total *= 0.90;
+        total *= 1.25;
+        return (double) Math.round(total * 100d) / 100d;
+    }
+
+    public static void main(String[] args) {
+        ShoppingCartPriceCalculator calc = new ShoppingCartPriceCalculator();
+        System.out.println("Basic (100x2) -> " + calc.calculateTotal(java.util.Arrays.asList(new Item(100, 2)))); // 250.0
+        System.out.println("Discount (300x2) -> " + calc.calculateTotal(java.util.Arrays.asList(new Item(300, 2)))); // 675.0
+        System.out.println("Boundary (250x2) -> " + calc.calculateTotal(java.util.Arrays.asList(new Item(250, 2)))); // 625.0
+        System.out.println("Rounding -> " + calc.calculateTotal(java.util.Arrays.asList(new Item(250.5, 2), new Item(0.5, 1)))); // 564.19
+        System.out.println("Empty -> " + calc.calculateTotal(new java.util.ArrayList<>())); // 0.0
+    }
+}
