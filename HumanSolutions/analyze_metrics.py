@@ -2,7 +2,7 @@
 Java Code Metrics Analysis Script
 ==================================
 Calculates CCN, Halstead Volume, SLOC, and Maintainability Index
-for all 83 Java files across 16 subjects.
+for all Java files across 16 subjects.
 
 Metric Definitions (per Section 3.4.1):
   CCN     = decision_points + 1
@@ -34,7 +34,7 @@ def count_sloc(source: str) -> int:
     return sum(1 for line in source.split('\n') if line.strip())
 
 
-def calculate_ccn(source: str) -> tuple[int, int]:
+def calculate_ccn(source: str):
     """
     Returns (decision_points, CCN).
     Falls back to regex-based counting if the AST parse fails.
@@ -62,7 +62,7 @@ def calculate_ccn(source: str) -> tuple[int, int]:
     return dp, dp + 1
 
 
-def _ccn_fallback(source: str) -> tuple[int, int]:
+def _ccn_fallback(source: str):
     """Regex-based CCN for files that cannot be parsed by javalang."""
     import re
     # Remove string/char literals and comments to avoid false matches
@@ -82,7 +82,7 @@ def _ccn_fallback(source: str) -> tuple[int, int]:
     return dp, dp + 1
 
 
-def calculate_halstead(source: str) -> dict | None:
+def calculate_halstead(source: str):
     """
     Returns dict with N1, N2, n1, n2, volume, or None on failure.
 
@@ -119,7 +119,7 @@ def calculate_halstead(source: str) -> dict | None:
     return {'N1': N1, 'N2': N2, 'n1': n1, 'n2': n2, 'volume': volume}
 
 
-def calculate_mi(volume: float, ccn: int, sloc: int) -> tuple[float, float] | tuple[None, None]:
+def calculate_mi(volume: float, ccn: int, sloc: int):
     """Returns (MI_raw, MI_norm). Returns (None, None) if inputs are invalid."""
     if volume <= 0 or sloc <= 0:
         return None, None
@@ -132,7 +132,7 @@ def calculate_mi(volume: float, ccn: int, sloc: int) -> tuple[float, float] | tu
 # File discovery
 # ---------------------------------------------------------------------------
 
-def find_java_files(root: str) -> list[str]:
+def find_java_files(root: str):
     """Recursively find all .java files under root."""
     results = []
     for dirpath, _, filenames in os.walk(root):
