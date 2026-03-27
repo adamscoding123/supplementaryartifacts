@@ -1,0 +1,498 @@
+project,bug_id,file,line,category,description,source
+Chart,1,AbstractCategoryItemRenderer.java,197,code_smell,"[java:S1948] Make non-static ""baseItemLabelGenerator"" transient or serializable.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,203,code_smell,"[java:S1948] Make non-static ""baseToolTipGenerator"" transient or serializable.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,209,code_smell,"[java:S1948] Make non-static ""baseURLGenerator"" transient or serializable.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,212,code_smell,"[java:S1948] Make non-static ""legendItemLabelGenerator"" transient or serializable.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,215,code_smell,"[java:S1948] Make non-static ""legendItemToolTipGenerator"" transient or serializable.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,218,code_smell,"[java:S1948] Make non-static ""legendItemURLGenerator"" transient or serializable.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,226,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,234,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,255,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,256,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,681,quality_warning,[java:S112] Replace generic exceptions with specific library exceptions or a custom exception.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,698,quality_warning,"[java:S2178] Correct this ""&"" to ""&&"" and extract the right operand to a variable if it should always be evaluated.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,923,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1100,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1129,security,"[java:S2259] A ""NullPointerException"" could be thrown; ""line"" is nullable here.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1180,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1223,security,"[java:S2259] A ""NullPointerException"" could be thrown; ""line"" is nullable here.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1469,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1531,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1532,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""result"".",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1568,quality_warning,"[java:S107] Method has 8 parameters, which is greater than 7 authorized.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1569,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1606,quality_warning,"[java:S107] Method has 9 parameters, which is greater than 7 authorized.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1651,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1660,quality_warning,[java:S112] Replace generic exceptions with specific library exceptions or a custom exception.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1680,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1790,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1797,logic_error,Inverted null check (!=) instead of (==) on dataset,defects4j
+Chart,1,AbstractCategoryItemRenderer.java,1800,security,"[java:S2259] A ""NullPointerException"" could be thrown; ""dataset"" is nullable here.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1862,quality_warning,"[java:S107] Method has 8 parameters, which is greater than 7 authorized.",sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1916,quality_warning,[java:S112] Replace generic exceptions with specific library exceptions or a custom exception.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1944,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,1,AbstractCategoryItemRenderer.java,1989,quality_warning,[java:S1134] Take the required action to fix the issue indicated by this comment.,sonarqube_verified
+Chart,7,TimePeriodValues.java,88,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,7,TimePeriodValues.java,128,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,7,TimePeriodValues.java,132,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,7,TimePeriodValues.java,257,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.,sonarqube_verified
+Chart,7,TimePeriodValues.java,300,logic_error,Uses minMiddleIndex instead of maxMiddleIndex,defects4j
+Chart,7,TimePeriodValues.java,401,quality_warning,"[java:S5413] Verify that ""remove()"" is used correctly.",sonarqube_verified
+Chart,7,TimePeriodValues.java,414,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Chart,7,TimePeriodValues.java,450,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Chart,7,TimePeriodValues.java,479,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Chart,7,TimePeriodValues.java,480,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""clone"".",sonarqube_verified
+Chart,7,TimePeriodValues.java,500,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,7,TimePeriodValues.java,501,quality_warning,[java:S1155] Use isEmpty() to check whether the collection is empty or not.,sonarqube_verified
+Chart,7,TimePeriodValues.java,509,quality_warning,[java:S106] Replace this use of System.err by a logger.,sonarqube_verified
+Chart,11,ShapeUtilities.java,107,quality_warning,"[java:S108] Remove this block of code, fill it in, or add a comment explaining why it is empty.",sonarqube_verified
+Chart,11,ShapeUtilities.java,110,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""result"".",sonarqube_verified
+Chart,11,ShapeUtilities.java,127,logic_error,"[java:S1221] Either override Object.equals(Object obj), or totally rename the method to prevent any confusion.",sonarqube_verified
+Chart,11,ShapeUtilities.java,158,logic_error,"[java:S1221] Either override Object.equals(Object obj), or totally rename the method to prevent any confusion.",sonarqube_verified
+Chart,11,ShapeUtilities.java,168,quality_warning,[java:S1126] Replace this if-then-else statement by a single return statement.,sonarqube_verified
+Chart,11,ShapeUtilities.java,183,logic_error,"[java:S1221] Either override Object.equals(Object obj), or totally rename the method to prevent any confusion.",sonarqube_verified
+Chart,11,ShapeUtilities.java,190,quality_warning,[java:S1126] Replace this if-then-else statement by a single return statement.,sonarqube_verified
+Chart,11,ShapeUtilities.java,205,logic_error,"[java:S1221] Either override Object.equals(Object obj), or totally rename the method to prevent any confusion.",sonarqube_verified
+Chart,11,ShapeUtilities.java,221,quality_warning,[java:S1126] Replace this if-then-else statement by a single return statement.,sonarqube_verified
+Chart,11,ShapeUtilities.java,236,logic_error,"[java:S1221] Either override Object.equals(Object obj), or totally rename the method to prevent any confusion.",sonarqube_verified
+Chart,11,ShapeUtilities.java,249,quality_warning,[java:S1126] Replace this if-then-else statement by a single return statement.,sonarqube_verified
+Chart,11,ShapeUtilities.java,264,logic_error,"[java:S1221] Either override Object.equals(Object obj), or totally rename the method to prevent any confusion.",sonarqube_verified
+Chart,11,ShapeUtilities.java,275,logic_error,Copy-paste error: p1 iterator used for p2,defects4j
+Chart,11,ShapeUtilities.java,364,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""result"".",sonarqube_verified
+Chart,12,MultiplePiePlot.java,96,quality_warning,"[java:S2157] Add a ""clone()"" method to this class.",sonarqube_verified
+Chart,12,MultiplePiePlot.java,117,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,129,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,145,code_smell,Direct field assignment bypasses setDataset() setter,defects4j
+Chart,12,MultiplePiePlot.java,157,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,276,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,288,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,331,quality_warning,[java:S1135] Complete the task associated to this TODO comment.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,344,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,424,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,465,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,476,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,490,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,509,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Chart,12,MultiplePiePlot.java,514,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,525,syntax_style,"[java:S1481] Remove this unused ""section"" local variable.",sonarqube_verified
+Chart,12,MultiplePiePlot.java,526,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,528,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,561,logic_error,"[java:S1206] This class overrides ""equals()"" and should therefore also override ""hashCode()"".",sonarqube_verified
+Chart,12,MultiplePiePlot.java,585,quality_warning,[java:S1126] Replace this if-then-else statement by a single return statement.,sonarqube_verified
+Chart,12,MultiplePiePlot.java,615,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,118,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,121,code_smell,"[java:S1948] Make non-static ""data"" transient or serializable.",sonarqube_verified
+Chart,17,TimeSeries.java,152,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,170,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,171,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,176,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,247,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,325,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,389,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,390,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,405,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,407,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,488,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.,sonarqube_verified
+Chart,17,TimeSeries.java,493,quality_warning,"[java:S1149] Replace the synchronized class ""StringBuffer"" by an unsynchronized one such as ""StringBuilder"".",sonarqube_verified
+Chart,17,TimeSeries.java,523,quality_warning,"[java:S1149] Replace the synchronized class ""StringBuffer"" by an unsynchronized one such as ""StringBuilder"".",sonarqube_verified
+Chart,17,TimeSeries.java,534,quality_warning,"[java:S2589] Remove this expression which always evaluates to ""true""",sonarqube_verified
+Chart,17,TimeSeries.java,675,quality_warning,"[java:S2129] Remove this ""Double"" constructor",sonarqube_verified
+Chart,17,TimeSeries.java,768,syntax_style,[java:S3878] Remove this array creation and simply pass the elements.,sonarqube_verified
+Chart,17,TimeSeries.java,771,syntax_style,"[java:S3878] Disambiguate this call by either casting as ""Object"" or ""Object[]"".",sonarqube_verified
+Chart,17,TimeSeries.java,803,quality_warning,[java:S1155] Use isEmpty() to check whether the collection is empty or not.,sonarqube_verified
+Chart,17,TimeSeries.java,836,quality_warning,"[java:S5413] Verify that ""remove()"" is used correctly.",sonarqube_verified
+Chart,17,TimeSeries.java,856,code_smell,"[java:S2975] Remove this ""clone"" implementation; use a copy constructor or copy factory instead.",sonarqube_verified
+Chart,17,TimeSeries.java,857,logic_error,clone() uses createCopy instead of super.clone(),defects4j
+Chart,17,TimeSeries.java,884,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,885,quality_warning,[java:S1155] Use isEmpty() to check whether the collection is empty or not.,sonarqube_verified
+Chart,17,TimeSeries.java,944,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Chart,17,TimeSeries.java,960,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Chart,17,TimeSeries.java,1009,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,21,DateUtils.java,86,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,103,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,108,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,113,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,118,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,123,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,128,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,134,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,140,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,146,syntax_style,[java:S1124] Reorder the modifiers to comply with the Java Language Specification.,sonarqube_verified
+Lang,21,DateUtils.java,157,syntax_style,[java:S1118] Hide this public constructor.,sonarqube_verified
+Lang,21,DateUtils.java,265,logic_error,Uses HOUR instead of HOUR_OF_DAY for time comparison,defects4j
+Lang,21,DateUtils.java,350,syntax_style,[java:S6353] Use concise character class syntax '\\d' instead of '[0-9]'.,sonarqube_verified
+Lang,21,DateUtils.java,941,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 66 to the 15 allowed.,sonarqube_verified
+Lang,21,DateUtils.java,1032,syntax_style,"[java:S1301] Replace this ""switch"" statement by ""if"" statements to increase readability.",sonarqube_verified
+Lang,21,DateUtils.java,1167,quality_warning,[java:S131] Add a default case to this switch.,sonarqube_verified
+Lang,21,DateUtils.java,1228,quality_warning,[java:S1452] Remove usage of generic wildcard type.,sonarqube_verified
+Lang,21,DateUtils.java,1678,syntax_style,"[java:S1301] Replace this ""switch"" statement by ""if"" statements to increase readability.",sonarqube_verified
+Lang,21,DateUtils.java,1795,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""result"".",sonarqube_verified
+Lang,21,DateUtils.java,1866,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,33,ClassUtils.java,73,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,89,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,91,quality_warning,"[java:S2864] Iterate over the ""entrySet"" instead of the ""keySet"".",sonarqube_verified
+Lang,33,ClassUtils.java,102,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,107,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,142,syntax_style,[java:S1118] Hide this public constructor.,sonarqube_verified
+Lang,33,ClassUtils.java,187,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,33,ClassUtils.java,258,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,33,ClassUtils.java,289,quality_warning,[java:S1168] Return an empty collection instead of null.,sonarqube_verified
+Lang,33,ClassUtils.java,291,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,315,quality_warning,[java:S1168] Return an empty collection instead of null.,sonarqube_verified
+Lang,33,ClassUtils.java,318,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,321,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,360,quality_warning,[java:S1168] Return an empty collection instead of null.,sonarqube_verified
+Lang,33,ClassUtils.java,362,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,387,quality_warning,[java:S1168] Return an empty collection instead of null.,sonarqube_verified
+Lang,33,ClassUtils.java,389,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,475,quality_warning,[java:S1125] Remove the unnecessary boolean literal.,sonarqube_verified
+Lang,33,ClassUtils.java,485,quality_warning,[java:S1125] Remove the unnecessary boolean literal.,sonarqube_verified
+Lang,33,ClassUtils.java,554,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.,sonarqube_verified
+Lang,33,ClassUtils.java,581,quality_warning,[java:S1125] Remove the unnecessary boolean literal.,sonarqube_verified
+Lang,33,ClassUtils.java,659,quality_warning,[java:S1168] Return an empty array instead of null.,sonarqube_verified
+Lang,33,ClassUtils.java,709,quality_warning,[java:S1168] Return an empty array instead of null.,sonarqube_verified
+Lang,33,ClassUtils.java,833,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,33,ClassUtils.java,841,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Lang,33,ClassUtils.java,845,syntax_style,[java:S135] Reduce the total number of break and continue statements in this loop to use at most one.,sonarqube_verified
+Lang,33,ClassUtils.java,904,quality_warning,[java:S1168] Return an empty array instead of null.,sonarqube_verified
+Lang,33,ClassUtils.java,910,logic_error,Missing null check on array element causes NPE,defects4j
+Lang,33,ClassUtils.java,1020,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.,sonarqube_verified
+Lang,33,ClassUtils.java,1040,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,44,NumberUtils.java,36,syntax_style,[java:S1133] Do not forget to remove this deprecated code someday.,sonarqube_verified
+Lang,44,NumberUtils.java,41,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,43,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,45,quality_warning,"[java:S2129] Remove this ""Long"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,46,syntax_style,[java:S1118] Hide this public constructor.,sonarqube_verified
+Lang,44,NumberUtils.java,47,quality_warning,"[java:S2129] Remove this ""Integer"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,49,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,51,quality_warning,"[java:S2129] Remove this ""Integer"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,53,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,55,quality_warning,"[java:S2129] Remove this ""Short"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,57,quality_warning,"[java:S2129] Remove this ""Short"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,59,quality_warning,"[java:S2129] Remove this ""Byte"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,61,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,63,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,65,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,67,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,69,quality_warning,"[java:S2129] Remove this ""Double"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,71,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,73,quality_warning,"[java:S2129] Remove this ""Float"" constructor",sonarqube_verified
+Lang,44,NumberUtils.java,75,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Lang,44,NumberUtils.java,84,syntax_style,[java:S1118] Hide this public constructor.,sonarqube_verified
+Lang,44,NumberUtils.java,107,syntax_style,[java:S1123] Add the missing @Deprecated annotation.,sonarqube_verified
+Lang,44,NumberUtils.java,138,quality_warning,"[java:S6541] A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 119 to 64, Complexity from 42 to 14, Nesting Leve",sonarqube_verified
+Lang,44,NumberUtils.java,142,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,44,NumberUtils.java,144,logic_error,Missing validation for single non-digit character input,defects4j
+Lang,44,NumberUtils.java,150,syntax_style,[java:S1123] Add the missing @Deprecated annotation.,sonarqube_verified
+Lang,44,NumberUtils.java,305,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,44,NumberUtils.java,364,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""bi"".",sonarqube_verified
+Lang,44,NumberUtils.java,376,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""bd"".",sonarqube_verified
+Lang,44,NumberUtils.java,397,quality_warning,"[java:S6541] A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 119 to 64, Complexity from 42 to 14, Nesting Leve",sonarqube_verified
+Lang,44,NumberUtils.java,468,security,"[java:S2259] A ""NullPointerException"" could be thrown; ""f"" is nullable here.",sonarqube_verified
+Lang,44,NumberUtils.java,482,security,"[java:S2259] A ""NullPointerException"" could be thrown; ""d"" is nullable here.",sonarqube_verified
+Lang,44,NumberUtils.java,563,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,44,NumberUtils.java,593,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,44,NumberUtils.java,617,quality_warning,"[java:S6541] A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 80 to 64, Complexity from 44 to 14, Nesting Level",sonarqube_verified
+Lang,44,NumberUtils.java,630,quality_warning,[java:S1066] Merge this if statement with the enclosing one.,sonarqube_verified
+Lang,44,NumberUtils.java,1386,quality_warning,"[java:S6541] A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 80 to 64, Complexity from 44 to 14, Nesting Level",sonarqube_verified
+Lang,44,NumberUtils.java,1399,quality_warning,[java:S1066] Merge this if statement with the enclosing one.,sonarqube_verified
+Lang,51,BooleanUtils.java,43,syntax_style,[java:S1118] Hide this public constructor.,sonarqube_verified
+Lang,51,BooleanUtils.java,65,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,90,quality_warning,[java:S1125] Remove the unnecessary boolean literals.,sonarqube_verified
+Lang,51,BooleanUtils.java,129,quality_warning,[java:S1125] Remove the unnecessary boolean literals.,sonarqube_verified
+Lang,51,BooleanUtils.java,182,quality_warning,"[java:S4144] Update this method so that its implementation is not identical to ""isTrue"" on line 86.",sonarqube_verified
+Lang,51,BooleanUtils.java,186,quality_warning,[java:S1125] Remove the unnecessary boolean literals.,sonarqube_verified
+Lang,51,BooleanUtils.java,206,quality_warning,[java:S1125] Remove the unnecessary boolean literals.,sonarqube_verified
+Lang,51,BooleanUtils.java,226,quality_warning,[java:S1125] Remove the unnecessary boolean literals.,sonarqube_verified
+Lang,51,BooleanUtils.java,265,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,353,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,385,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,392,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,565,quality_warning,"[java:S1192] Define a constant instead of duplicating this literal ""false"" 3 times.",sonarqube_verified
+Lang,51,BooleanUtils.java,577,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,609,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,616,quality_warning,"[java:S2447] Null is returned but a ""Boolean"" is expected.",sonarqube_verified
+Lang,51,BooleanUtils.java,649,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.,sonarqube_verified
+Lang,51,BooleanUtils.java,656,quality_warning,"[java:S4973] Strings and Boxed types should be compared using ""equals()"".",sonarqube_verified
+Lang,51,BooleanUtils.java,662,quality_warning,[java:S131] Add a default case to this switch.,sonarqube_verified
+Lang,51,BooleanUtils.java,670,quality_warning,"[java:S128] End this switch case with an unconditional break, return or throw statement.",sonarqube_verified
+Lang,51,BooleanUtils.java,681,logic_error,Missing return false for unmatched case in toBoolean,defects4j
+Lang,51,BooleanUtils.java,702,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Lang,59,StrBuilder.java,70,quality_warning,"[java:S2157] Add a ""clone()"" method to this class.",sonarqube_verified
+Lang,59,StrBuilder.java,168,quality_warning,"[java:S7158] Use ""isEmpty()"" to check whether a ""String"" is empty or not.",sonarqube_verified
+Lang,59,StrBuilder.java,353,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,374,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,404,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,517,quality_warning,"[java:S1149] Replace the synchronized class ""StringBuffer"" by an unsynchronized one such as ""StringBuilder"".",sonarqube_verified
+Lang,59,StrBuilder.java,540,quality_warning,"[java:S1149] Replace the synchronized class ""StringBuffer"" by an unsynchronized one such as ""StringBuilder"".",sonarqube_verified
+Lang,59,StrBuilder.java,767,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Lang,59,StrBuilder.java,768,quality_warning,[java:S1155] Use isEmpty() to check whether the collection is empty or not.,sonarqube_verified
+Lang,59,StrBuilder.java,770,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Lang,59,StrBuilder.java,791,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Lang,59,StrBuilder.java,884,logic_error,Using strLen instead of width in appendFixedWidthPadRight,defects4j
+Lang,59,StrBuilder.java,962,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,988,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,1147,quality_warning,[java:S127] Refactor the code in order to not assign to this loop counter from within the loop body.,sonarqube_verified
+Lang,59,StrBuilder.java,1154,quality_warning,[java:S127] Refactor the code in order to not assign to this loop counter from within the loop body.,sonarqube_verified
+Lang,59,StrBuilder.java,1445,quality_warning,[java:S127] Refactor the code in order to not assign to this loop counter from within the loop body.,sonarqube_verified
+Lang,59,StrBuilder.java,1777,quality_warning,[java:S1119] Refactor the code to remove this label and the need for it.,sonarqube_verified
+Lang,59,StrBuilder.java,1883,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.,sonarqube_verified
+Lang,59,StrBuilder.java,1894,quality_warning,[java:S1119] Refactor the code to remove this label and the need for it.,sonarqube_verified
+Lang,59,StrBuilder.java,2049,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Lang,59,StrBuilder.java,2082,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,2083,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,2108,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,2109,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,2138,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,2166,quality_warning,"[java:S1149] Replace the synchronized class ""StringBuffer"" by an unsynchronized one such as ""StringBuilder"".",sonarqube_verified
+Lang,59,StrBuilder.java,2217,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2226,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2257,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2258,quality_warning,[java:S1125] Remove the unnecessary boolean literal.,sonarqube_verified
+Lang,59,StrBuilder.java,2265,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Lang,59,StrBuilder.java,2285,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2287,quality_warning,"[java:S2184] Cast one of the operands of this subtraction operation to a ""long"".",sonarqube_verified
+Lang,59,StrBuilder.java,2297,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2302,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2307,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2312,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2339,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2344,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2354,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Lang,59,StrBuilder.java,2359,quality_warning,"[java:S1161] Add the ""@Override"" annotation above this method signature",sonarqube_verified
+Math,41,Variance.java,69,code_smell,"[java:S2160] Override the ""equals"" method in this class.",sonarqube_verified
+Math,41,Variance.java,256,quality_warning,[java:S6213] Rename this variable to not match a restricted identifier.,sonarqube_verified
+Math,41,Variance.java,277,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.,sonarqube_verified
+Math,41,Variance.java,289,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""dev"".",sonarqube_verified
+Math,41,Variance.java,316,quality_warning,[java:S6213] Rename this variable to not match a restricted identifier.,sonarqube_verified
+Math,41,Variance.java,363,quality_warning,"[java:S1700] Rename field ""direction""",sonarqube_verified
+Math,41,Variance.java,402,quality_warning,[java:S6213] Rename this variable to not match a restricted identifier.,sonarqube_verified
+Math,41,Variance.java,409,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""dev"".",sonarqube_verified
+Math,41,Variance.java,504,quality_warning,[java:S6213] Rename this variable to not match a restricted identifier.,sonarqube_verified
+Math,41,Variance.java,511,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""dev"".",sonarqube_verified
+Math,41,Variance.java,520,logic_error,Loop starts at 0 instead of begin parameter,defects4j
+Math,41,Variance.java,525,logic_error,"[java:S3518] Make sure ""sumWts"" can't be zero before doing this division.",sonarqube_verified
+Math,41,Variance.java,527,logic_error,"[java:S3518] Make sure ""sumWts"" can't be zero before doing this division.",sonarqube_verified
+Math,59,FastMath.java,35,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,40,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,45,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,50,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,53,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,56,syntax_style,[java:S1197] Move the array designators [][] to the type.,sonarqube_verified
+Math,59,FastMath.java,65,syntax_style,[java:S1197] Move the array designators [][] to the type.,sonarqube_verified
+Math,59,FastMath.java,85,syntax_style,[java:S1197] Move the array designators [][] to the type.,sonarqube_verified
+Math,59,FastMath.java,98,syntax_style,[java:S1197] Move the array designators [][] to the type.,sonarqube_verified
+Math,59,FastMath.java,108,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,111,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,114,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,117,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,120,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,123,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,126,syntax_style,"[java:S3008] Rename this field ""RECIP_2PI"" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",sonarqube_verified
+Math,59,FastMath.java,147,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,155,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,158,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,174,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,175,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,227,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,239,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,282,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,306,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,342,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,393,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,416,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,458,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,582,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,59,FastMath.java,631,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.,sonarqube_verified
+Math,59,FastMath.java,761,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,762,quality_warning,"[java:S2589] Remove this expression which always evaluates to ""false""",sonarqube_verified
+Math,59,FastMath.java,768,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,769,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,791,quality_warning,[java:S1199] Extract this nested code block into a method.,sonarqube_verified
+Math,59,FastMath.java,828,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,841,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,848,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,853,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,858,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,910,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,911,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,912,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,913,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,914,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,944,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,960,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,980,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,993,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1018,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1041,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1043,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1053,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1054,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1055,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1056,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1107,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1108,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1109,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1110,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1111,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1112,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1164,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.,sonarqube_verified
+Math,59,FastMath.java,1169,quality_warning,[java:S1066] Merge this if statement with the enclosing one.,sonarqube_verified
+Math,59,FastMath.java,1211,quality_warning,[java:S1066] Merge this if statement with the enclosing one.,sonarqube_verified
+Math,59,FastMath.java,1217,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""xb"".",sonarqube_verified
+Math,59,FastMath.java,1258,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1261,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1267,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1269,syntax_style,"[java:S1905] Remove this unnecessary cast to ""double"".",sonarqube_verified
+Math,59,FastMath.java,1271,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""lnza"".",sonarqube_verified
+Math,59,FastMath.java,1283,syntax_style,"[java:S1905] Remove this unnecessary cast to ""double"".",sonarqube_verified
+Math,59,FastMath.java,1316,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1344,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1347,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1392,logic_error,[java:S3518] Make sure this expression can't be zero before doing this division.,sonarqube_verified
+Math,59,FastMath.java,1400,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1427,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1448,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.,sonarqube_verified
+Math,59,FastMath.java,1449,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1455,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,1490,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,1512,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,1602,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""result"".",sonarqube_verified
+Math,59,FastMath.java,1603,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1627,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1628,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1629,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1630,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1648,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1676,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1677,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1678,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1679,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1680,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1718,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1720,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1721,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1722,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1723,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1758,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1775,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1776,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1777,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1778,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1779,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1831,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1832,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1833,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,1865,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1899,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1925,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1939,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1941,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1960,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,1975,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2043,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2068,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2082,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2084,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2110,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""d"".",sonarqube_verified
+Math,59,FastMath.java,2139,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2188,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,2427,quality_warning,"[java:S2589] Remove this expression which always evaluates to ""false""",sonarqube_verified
+Math,59,FastMath.java,2436,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,2445,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2511,quality_warning,"[java:S2589] Remove this expression which always evaluates to ""false""",sonarqube_verified
+Math,59,FastMath.java,2521,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,2530,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2564,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2586,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.,sonarqube_verified
+Math,59,FastMath.java,2606,quality_warning,"[java:S2589] Remove this expression which always evaluates to ""false""",sonarqube_verified
+Math,59,FastMath.java,2616,syntax_style,[java:S1197] Move the array designators [] to the type.,sonarqube_verified
+Math,59,FastMath.java,2625,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2740,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2743,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2745,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2783,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2800,quality_warning,"[java:S4165] Remove this useless assignment; ""ya"" already holds the assigned value along all execution paths.",sonarqube_verified
+Math,59,FastMath.java,2812,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,59,FastMath.java,2832,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""resultb"".",sonarqube_verified
+Math,59,FastMath.java,2849,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.,sonarqube_verified
+Math,59,FastMath.java,2850,quality_warning,"[java:S2589] Remove this expression which always evaluates to ""false""",sonarqube_verified
+Math,59,FastMath.java,2857,logic_error,"[java:S3518] Make sure ""y"" can't be zero before doing this division.",sonarqube_verified
+Math,59,FastMath.java,2948,logic_error,"[java:S3518] Make sure ""x"" can't be zero before doing this division.",sonarqube_verified
+Math,59,FastMath.java,2960,quality_warning,"[java:S1488] Immediately return this expression instead of assigning it to the temporary variable ""result"".",sonarqube_verified
+Math,59,FastMath.java,2970,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,3042,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,3146,quality_warning,[java:S1110] Remove these useless parentheses.,sonarqube_verified
+Math,59,FastMath.java,3341,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,3358,syntax_style,"[java:S1905] Remove this unnecessary cast to ""double"".",sonarqube_verified
+Math,59,FastMath.java,3368,security,"[java:S2583] Change this condition so that it does not always evaluate to ""false""",sonarqube_verified
+Math,59,FastMath.java,3446,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,59,FastMath.java,3455,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,59,FastMath.java,3482,logic_error,Returns b instead of a in float max function,defects4j
+Math,59,FastMath.java,3491,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,75,Frequency.java,54,code_smell,"[java:S1948] Make non-static ""freqTable"" transient or serializable.",sonarqube_verified
+Math,75,Frequency.java,60,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Math,75,Frequency.java,70,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Math,75,Frequency.java,82,quality_warning,"[java:S1149] Replace the synchronized class ""StringBuffer"" by an unsynchronized one such as ""StringBuilder"".",sonarqube_verified
+Math,75,Frequency.java,112,syntax_style,[java:S1133] Do not forget to remove this deprecated code someday.,sonarqube_verified
+Math,75,Frequency.java,167,syntax_style,[java:S1133] Do not forget to remove this deprecated code someday.,sonarqube_verified
+Math,75,Frequency.java,232,syntax_style,[java:S1133] Do not forget to remove this deprecated code someday.,sonarqube_verified
+Math,75,Frequency.java,302,syntax_style,[java:S1133] Do not forget to remove this deprecated code someday.,sonarqube_verified
+Math,75,Frequency.java,303,logic_error,Calls getCumPct instead of getPct,defects4j
+Math,75,Frequency.java,368,syntax_style,[java:S1133] Do not forget to remove this deprecated code someday.,sonarqube_verified
+Math,75,Frequency.java,390,code_smell,[java:S3740] Provide the parametrized type for this generic.,sonarqube_verified
+Math,75,Frequency.java,474,syntax_style,[java:S1133] Do not forget to remove this deprecated code someday.,sonarqube_verified
+Math,79,MathUtils.java,128,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.,sonarqube_verified
+Math,79,MathUtils.java,132,quality_warning,[java:S2234] Parameters to addAndCheck have the same names but not the same order as the method arguments.,sonarqube_verified
+Math,79,MathUtils.java,447,quality_warning,[java:S4274] Replace this assert with a proper check.,sonarqube_verified
+Math,79,MathUtils.java,513,quality_warning,"[java:S1192] Define a constant instead of duplicating this literal ""must have n >= 0 for n!, got n = {0}"" 3 times.",sonarqube_verified
+Math,79,MathUtils.java,614,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.,sonarqube_verified
+Math,79,MathUtils.java,629,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,79,MathUtils.java,655,quality_warning,[java:S125] This block of commented-out lines of code should be removed.,sonarqube_verified
+Math,79,MathUtils.java,681,quality_warning,"[java:S5738] Remove this call to a deprecated method, it has been marked for removal.",sonarqube_verified
+Math,79,MathUtils.java,848,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.,sonarqube_verified
+Math,79,MathUtils.java,853,quality_warning,[java:S2234] Parameters to mulAndCheck have the same names but not the same order as the method arguments.,sonarqube_verified
+Math,79,MathUtils.java,1066,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_UP""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1085,quality_warning,"[java:S1874] Remove this use of ""setScale""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1106,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_UP""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1139,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.,sonarqube_verified
+Math,79,MathUtils.java,1142,quality_warning,"[java:S1874] Remove this use of ""ROUND_CEILING""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1149,quality_warning,"[java:S1874] Remove this use of ""ROUND_DOWN""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1152,quality_warning,"[java:S1874] Remove this use of ""ROUND_FLOOR""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1159,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_DOWN""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1169,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_EVEN""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1186,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_UP""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1196,quality_warning,"[java:S1874] Remove this use of ""ROUND_UNNECESSARY""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1201,quality_warning,"[java:S1874] Remove this use of ""ROUND_UP""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1209,quality_warning,"[java:S1874] Remove this use of ""ROUND_CEILING""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1210,quality_warning,"[java:S1874] Remove this use of ""ROUND_DOWN""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1211,quality_warning,"[java:S1874] Remove this use of ""ROUND_FLOOR""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1212,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_DOWN""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1213,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_EVEN""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1214,quality_warning,"[java:S1874] Remove this use of ""ROUND_HALF_UP""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1215,quality_warning,"[java:S1874] Remove this use of ""ROUND_UNNECESSARY""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1216,quality_warning,"[java:S1874] Remove this use of ""ROUND_UP""; it is deprecated.",sonarqube_verified
+Math,79,MathUtils.java,1232,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,79,MathUtils.java,1251,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,79,MathUtils.java,1269,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,79,MathUtils.java,1283,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,79,MathUtils.java,1297,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,79,MathUtils.java,1312,quality_warning,[java:S3358] Extract this nested ternary operation into an independent statement.,sonarqube_verified
+Math,79,MathUtils.java,1382,quality_warning,"[java:S1192] Define a constant instead of duplicating this literal ""cannot raise an integral value to a negative power ({0}^{1})"" 7 times.",sonarqube_verified
+Math,79,MathUtils.java,1624,logic_error,Int overflow in Euclidean distance calculation,defects4j
+Math,80,EigenDecompositionImpl.java,85,syntax_style,"[java:S1450] Remove the ""lowerSpectra"" field and declare it as a local variable in the relevant methods.",sonarqube_verified
+Math,80,EigenDecompositionImpl.java,88,syntax_style,"[java:S1450] Remove the ""upperSpectra"" field and declare it as a local variable in the relevant methods.",sonarqube_verified
+Math,80,EigenDecompositionImpl.java,612,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.,sonarqube_verified
+Math,80,EigenDecompositionImpl.java,678,quality_warning,"[java:S1994] Move the update of ""j"" into this loop's update clause.",sonarqube_verified
+Math,80,EigenDecompositionImpl.java,693,quality_warning,"[java:S2293] Replace the type specification in this constructor call with the diamond operator (""<>"").",sonarqube_verified
+Math,80,EigenDecompositionImpl.java,823,quality_warning,"[java:S6541] A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 79 to 64, Complexity from 18 to 14, Nesting Level",sonarqube_verified
+Math,80,EigenDecompositionImpl.java,991,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.,sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1044,quality_warning,[java:S127] Refactor the code in order to not assign to this loop counter from within the loop body.,sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1054,quality_warning,[java:S1066] Merge this if statement with the enclosing one.,sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1112,quality_warning,[java:S127] Refactor the code in order to not assign to this loop counter from within the loop body.,sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1135,logic_error,Off-by-one: 4*n-1 instead of 4*(n-1),defects4j
+Math,80,EigenDecompositionImpl.java,1329,quality_warning,[java:S3776] Refactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.,sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1431,quality_warning,"[java:S6541] A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 207 to 64, Complexity from 56 to 14, Nesting Leve",sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1489,quality_warning,"[java:S1854] Remove this useless assignment to local variable ""b2"".",sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1504,syntax_style,[java:S135] Reduce the total number of break and continue statements in this loop to use at most one.,sonarqube_verified
+Math,80,EigenDecompositionImpl.java,1547,syntax_style,[java:S135] Reduce the total number of break and continue statements in this loop to use at most one.,sonarqube_verified

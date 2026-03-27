@@ -1,0 +1,41 @@
+project,bug_id,buggy_file,buggy_method,buggy_line_start,buggy_line_end,category,description
+Lang,1,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,createNumber,466,468,logic_error,Missing boundary check for signed hex values causing incorrect type promotion for values near max int/long
+Lang,4,src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java,translate,31,77,code_smell,Using CharSequence as HashMap key instead of String violates equals/hashCode contract causing lookup failures
+Lang,5,src/main/java/org/apache/commons/lang3/LocaleUtils.java,toLocale,96,97,security,Missing input validation for locale strings starting with underscore allows invalid locale creation
+Lang,6,src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java,translate,95,95,logic_error,Wrong variable used in Character.codePointAt (pos instead of pt) causing incorrect character advancement
+Lang,9,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,FastDateParser,143,143,security,Missing validation that entire date format pattern was consumed during parsing
+Lang,11,src/main/java/org/apache/commons/lang3/RandomStringUtils.java,random,244,244,security,Missing validation that end parameter is greater than start parameter
+Lang,16,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,createNumber,458,458,logic_error,Missing case-insensitive check for hex prefix 0X and -0X
+Lang,21,src/main/java/org/apache/commons/lang3/time/DateUtils.java,isSameLocalTime,265,265,logic_error,Using Calendar.HOUR (12-hour) instead of Calendar.HOUR_OF_DAY (24-hour) for time comparison
+Lang,24,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,isNumber,1413,1413,logic_error,Missing hasDecPoint check allows strings like 2.3. to be considered valid numbers
+Lang,33,src/main/java/org/apache/commons/lang3/ClassUtils.java,toClass,910,910,logic_error,Missing null check on array element causes NullPointerException when array contains null
+Lang,44,src/java/org/apache/commons/lang/NumberUtils.java,createNumber,144,144,security,Missing validation for single non-digit character input causes incorrect parsing
+Lang,51,src/java/org/apache/commons/lang/BooleanUtils.java,toBoolean,681,681,logic_error,Missing return false for unmatched case in string-to-boolean conversion
+Lang,58,src/java/org/apache/commons/lang/math/NumberUtils.java,createNumber,454,455,logic_error,Wrong operator precedence between && and || causes incorrect numeric string validation
+Lang,59,src/java/org/apache/commons/lang/text/StrBuilder.java,appendFixedWidthPadRight,884,884,logic_error,Using strLen instead of width parameter causes buffer content to exceed specified width
+Lang,61,src/java/org/apache/commons/lang/text/StrBuilder.java,indexOf,1776,1776,logic_error,Off-by-one error using buffer length minus strLen instead of size minus strLen plus one
+Chart,1,source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java,getLegendItems,1797,1797,logic_error,Inverted null check condition (!= instead of ==) causes legend items to be skipped when dataset exists
+Chart,6,source/org/jfree/chart/util/ShapeList.java,equals,111,111,code_smell,equals() method delegates to super.equals() instead of comparing shape elements individually
+Chart,7,source/org/jfree/data/time/TimePeriodValues.java,updateBounds,300,302,logic_error,Using minMiddleIndex instead of maxMiddleIndex when computing maximum middle value
+Chart,8,source/org/jfree/data/time/Week.java,Week,175,175,logic_error,Constructor ignores timezone parameter and uses DEFAULT_TIME_ZONE instead
+Chart,9,source/org/jfree/data/time/TimeSeries.java,createCopy,944,944,logic_error,Missing check for endIndex less than startIndex allows invalid range in time series copy
+Chart,11,source/org/jfree/chart/util/ShapeUtilities.java,equal,275,275,logic_error,Copy-paste error uses p1 path iterator for both paths instead of p2 for second iterator
+Chart,12,source/org/jfree/chart/plot/MultiplePiePlot.java,MultiplePiePlot,145,145,code_smell,Direct field assignment bypasses setDataset() setter which registers change listener
+Chart,17,source/org/jfree/data/time/TimeSeries.java,clone,857,857,code_smell,Incorrect clone implementation uses createCopy instead of super.clone() with deep copy of data list
+Chart,20,source/org/jfree/chart/plot/ValueMarker.java,ValueMarker,95,95,logic_error,Constructor passes paint parameter for both paint and outlinePaint ignoring actual outlinePaint/outlineStroke arguments
+Chart,24,source/org/jfree/chart/renderer/GrayPaintScale.java,getPaint,126,126,logic_error,Using unclamped value instead of clamped variable v for gray paint calculation
+Math,2,src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java,getNumericalMean,268,268,logic_error,Integer multiplication before cast to double causes overflow for large population sizes
+Math,5,src/main/java/org/apache/commons/math3/complex/Complex.java,reciprocal,305,305,logic_error,Returns NaN instead of INF for reciprocal of zero complex number
+Math,11,src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java,density,183,183,logic_error,Integer division in -dim/2 truncates result instead of using -0.5*dim for correct floating-point exponent
+Math,30,src/main/java/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java,calculateAsymptoticPValue,173,173,logic_error,Integer type for n1*n2 product causes overflow when sample sizes are large
+Math,34,src/main/java/org/apache/commons/math3/genetics/ListPopulation.java,iterator,209,209,code_smell,Direct field access to chromosomes bypasses getChromosomes() getter breaking subclass override behavior
+Math,41,src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java,evaluate,520,520,logic_error,Loop iterates from index 0 instead of begin parameter causing incorrect weighted variance calculation
+Math,56,src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java,getCounts,237,243,logic_error,Wrong algorithm for computing last dimension index uses cumulative counting instead of simple subtraction
+Math,59,src/main/java/org/apache/commons/math/util/FastMath.java,max,3482,3482,logic_error,Returns b instead of a when a > b in float max function
+Math,70,src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java,solve,72,72,logic_error,Calls solve without passing function argument causing solver to use wrong or null function
+Math,73,src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java,solve,135,135,security,Missing validation that initial endpoints bracket the root allowing solver to proceed with invalid input
+Math,75,src/main/java/org/apache/commons/math/stat/Frequency.java,getPct,303,303,logic_error,Calls getCumPct (cumulative percentage) instead of getPct (individual percentage) for integer values
+Math,79,src/main/java/org/apache/commons/math/util/MathUtils.java,distance,1624,1626,logic_error,Using int type for sum and differences causes integer overflow in Euclidean distance calculation
+Math,80,src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java,flipIfWarranted,1135,1135,logic_error,Off-by-one error computing index as 4*n-1 instead of 4*(n-1)
+Math,82,src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java,getPivotRow,82,82,logic_error,Using >= instead of > comparison allows zero-ratio rows to be selected as pivot
+Math,106,src/java/org/apache/commons/math/fraction/ProperFractionFormat.java,parse,164,165,security,Missing validation for negative numerator and denominator in proper fraction parsing

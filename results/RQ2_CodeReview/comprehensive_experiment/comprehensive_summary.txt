@@ -1,0 +1,151 @@
+===============================================================================
+SUPPLEMENTARY EXPERIMENT: BALANCED COMPARISON — SonarQube vs AI Code Review
+===============================================================================
+Date: 2026-03-27
+Scope: 15 files (5 Lang, 5 Chart, 5 Math) selected for richest SonarQube coverage
+Ground truth: 497 verified issues from SonarQube findings + Defects4J bugs
+
+===============================================================================
+1. TOTAL ISSUES PER CATEGORY IN COMPREHENSIVE GROUND TRUTH
+===============================================================================
+
+Category            Count    Percentage    Primary Source
+-----------         -----    ----------    ---------------
+quality_warning       276       55.5%      SonarQube rules (complexity, deprecated, magic numbers)
+syntax_style          127       25.6%      SonarQube rules (naming, modifiers, annotations)
+code_smell             53       10.7%      SonarQube rules (raw types, serialization) + D4J
+logic_error            26        5.2%      Defects4J (15) + SonarQube BUG rules (11)
+security               15        3.0%      SonarQube rules (null deref, unsafe ops)
+-----------         -----    ----------
+TOTAL                 497      100.0%
+
+Source breakdown:
+  sonarqube_verified:  482 (97.0%)
+  defects4j:            15 ( 3.0%)
+
+===============================================================================
+2. DETECTION RATE PER CATEGORY PER TOOL
+===============================================================================
+
+Category            SonarQube              AI Review
+                    Det/Total   Rate       Det/Total   Rate
+-----------         ---------   ----       ---------   ----
+syntax_style        127/127    100.0%       29/127    22.8%
+quality_warning     276/276    100.0%       40/276    14.5%
+code_smell           52/53      98.1%       25/53     47.2%
+security             15/15     100.0%        1/15      6.7%
+logic_error          16/26      61.5%       15/26     57.7%
+-----------         ---------   ----       ---------   ----
+OVERALL             486/497     97.8%      110/497    22.1%
+
+===============================================================================
+3. OVERALL DETECTION RATE PER TOOL
+===============================================================================
+
+Tool            True Positives    False Negatives    Detection Rate
+-----------     --------------    ---------------    --------------
+SonarQube             486               11              97.8%
+AI Review             110              387              22.1%
+
+===============================================================================
+4. FALSE POSITIVES PER TOOL
+===============================================================================
+
+Tool            False Positives    Notes
+-----------     ---------------    -----
+SonarQube                 0        See fairness caveat below
+AI Review                82        Many are likely valid findings not in GT
+
+IMPORTANT CAVEAT: SonarQube shows 0 false positives because 97% of the
+ground truth was BUILT FROM SonarQube findings. This is structurally
+circular — SonarQube cannot have false positives against a ground truth
+derived from its own output. See fairness assessment below.
+
+The AI's 82 "false positives" include findings like:
+  - Operator precedence bugs in NumberUtils (Lang-44 line 195)
+  - Null-unsafe helper methods (Lang-44 lines 317-375)
+  - Mutable protected fields (Lang-59 line 85)
+  - hashCode/equals contract violations (Chart-1 line 1531)
+  - Integer overflow in abs() for MIN_VALUE (Math-59 lines 3237, 3246)
+Many of these are VALID issues that simply were not flagged by SonarQube
+and therefore not included in the SonarQube-seeded ground truth.
+
+===============================================================================
+5. OVERLAP ANALYSIS
+===============================================================================
+
+Both tools detected:      99 issues (19.9%)
+Only SonarQube:          387 issues (77.9%)
+Only AI Review:           11 issues ( 2.2%)
+Neither tool:              0 issues ( 0.0%)
+
+The 11 issues detected only by the AI (not by SonarQube) include:
+  - 8 Defects4J logic bugs that SonarQube had no rule for
+  - 3 code smell / design issues without SonarQube coverage
+
+The 387 issues detected only by SonarQube are predominantly:
+  - Raw generic type warnings (java:S3740)
+  - Missing @Override annotations
+  - Cognitive complexity violations
+  - Magic number flags
+  - Redundant code patterns
+  These are pattern-based checks that an AI reviewer does not
+  systematically enumerate line-by-line.
+
+===============================================================================
+6. FAIRNESS ASSESSMENT
+===============================================================================
+
+This experiment has an inherent methodological asymmetry that must be
+disclosed: the comprehensive ground truth was seeded primarily from
+SonarQube output (482/497 = 97%), making SonarQube's near-perfect
+score (97.8%) structurally guaranteed rather than independently earned.
+
+WHAT THIS EXPERIMENT VALIDLY SHOWS:
+
+  1. COMPLEMENTARY STRENGTHS. The two tools are strong in different areas:
+     - SonarQube excels at ENUMERATION: systematically flagging every
+       instance of a known pattern (all raw types, all missing @Override,
+       all complexity violations). It is exhaustive and consistent.
+     - The AI excels at COMPREHENSION: understanding semantic meaning,
+       detecting logic errors that require reasoning about program
+       behavior (inverted conditions, integer overflow, off-by-one errors).
+
+  2. CATEGORY-SPECIFIC PERFORMANCE (adjusted for GT bias):
+     - syntax_style:     SonarQube WINS decisively (100% vs 22.8%)
+     - quality_warning:  SonarQube WINS decisively (100% vs 14.5%)
+     - code_smell:       SonarQube WINS (98.1% vs 47.2%)
+     - security:         SonarQube WINS on pattern-based nullity (100% vs 6.7%)
+                         but these are all SQ-sourced null-deref warnings
+     - logic_error:      COMPARABLE (61.5% vs 57.7%), and the AI found
+                         8 logic bugs that SonarQube completely missed
+
+  3. FALSE POSITIVE INTERPRETATION:
+     - SonarQube's 0 FPs is an artifact of the GT construction method.
+     - The AI's 82 "FPs" include many genuine issues (null-safety gaps,
+       integer overflow risks, contract violations) that a human auditor
+       would likely accept. A manual review of the AI's 82 FPs would
+       likely reclassify 30-50% as true positives.
+
+  4. COMBINED VALUE:
+     - The union of both tools covers 497 + ~40 valid AI-unique findings
+       ≈ 537 total issues, more than either tool alone.
+     - SonarQube provides breadth (systematic pattern coverage).
+     - The AI provides depth (semantic understanding of logic flows).
+
+RECOMMENDATION FOR THE THESIS:
+
+Present BOTH experiments. The first experiment (Defects4J-only GT)
+shows AI superiority on semantic bugs (82.5% vs 5.0%). This second
+experiment shows SonarQube superiority on pattern-based quality issues
+(97.8% vs 22.1%). Together they demonstrate that static analysis and
+AI review are COMPLEMENTARY, not competing — each catches defects the
+other misses. The strongest code review process uses both.
+
+A fair single-number comparison across ALL defect types would require
+a ground truth built independently of both tools (e.g., by human
+expert audit), which is outside the scope of this experiment.
+
+===============================================================================
+END OF COMPREHENSIVE SUMMARY
+===============================================================================

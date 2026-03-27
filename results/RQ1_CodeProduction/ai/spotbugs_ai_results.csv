@@ -1,0 +1,12 @@
+file,directory,category,bugtype,priority,line,description
+AnagramChecker.java,AISolutions/GeminiRun1,I18N,DM_CONVERT_CASE,Low,2,
+AnagramChecker.java,AISolutions/GeminiRun10,I18N,DM_CONVERT_CASE,Low,1,
+TextCleaner.java,AISolutions/GeminiRun10,PERFORMANCE,SBSC_USE_STRINGBUFFER_CONCATENATION,Medium,1,
+AnagramChecker.java,AISolutions/GeminiRun2,I18N,DM_CONVERT_CASE,Low,1,
+AnagramChecker.java,AISolutions/GeminiRun3,I18N,DM_CONVERT_CASE,Low,3,
+AnagramChecker.java,AISolutions/GeminiRun5,I18N,DM_CONVERT_CASE,Low,2,
+AnagramChecker.java,AISolutions/GeminiRun6,I18N,DM_CONVERT_CASE,Low,1,
+AnagramChecker.java,AISolutions/GeminiRun7,I18N,DM_CONVERT_CASE,Low,3,
+AnagramChecker.java,AISolutions/GeminiRun8,I18N,DM_CONVERT_CASE,Low,3,
+AnagramChecker.java,AISolutions/GeminiRun9,I18N,DM_CONVERT_CASE,Low,2,
+PersonnummerValidator.java,AISolutions/GeminiRun9,STYLE,IM_BAD_CHECK_FOR_ODD,Medium,4,

@@ -1,0 +1,186 @@
+tool,project,bug_id,file,line,description
+sonarqube,Lang,1,NumberUtils.java,77,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,1,NumberUtils.java,450,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 138 to 64, Complexi"
+sonarqube,Lang,1,NumberUtils.java,450,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 84 to the 15 allowed.
+sonarqube,Lang,1,NumberUtils.java,458,[CODE_SMELL] java:S117: Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.
+sonarqube,Lang,1,NumberUtils.java,537,"[BUG] java:S2259: A ""NullPointerException"" could be thrown; ""f"" is nullable here."
+sonarqube,Lang,1,NumberUtils.java,551,"[BUG] java:S2259: A ""NullPointerException"" could be thrown; ""d"" is nullable here."
+sonarqube,Lang,1,NumberUtils.java,633,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,1,NumberUtils.java,1325,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.
+sonarqube,Lang,1,NumberUtils.java,1325,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 84 to 64, Complexit"
+sonarqube,Lang,5,LocaleUtils.java,43,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,5,LocaleUtils.java,47,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,5,LocaleUtils.java,56,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,5,LocaleUtils.java,102,"[CODE_SMELL] java:S1874: Remove this use of ""Locale""; it is deprecated."
+sonarqube,Lang,5,LocaleUtils.java,112,"[CODE_SMELL] java:S1874: Remove this use of ""Locale""; it is deprecated."
+sonarqube,Lang,5,LocaleUtils.java,119,"[CODE_SMELL] java:S1874: Remove this use of ""Locale""; it is deprecated."
+sonarqube,Lang,5,LocaleUtils.java,127,"[CODE_SMELL] java:S1874: Remove this use of ""Locale""; it is deprecated."
+sonarqube,Lang,5,LocaleUtils.java,166,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,5,LocaleUtils.java,169,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,5,LocaleUtils.java,170,"[CODE_SMELL] java:S1874: Remove this use of ""Locale""; it is deprecated."
+sonarqube,Lang,5,LocaleUtils.java,172,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,5,LocaleUtils.java,173,"[CODE_SMELL] java:S1874: Remove this use of ""Locale""; it is deprecated."
+sonarqube,Lang,5,LocaleUtils.java,175,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literal.
+sonarqube,Lang,5,LocaleUtils.java,237,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,5,LocaleUtils.java,269,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,5,LocaleUtils.java,274,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,5,LocaleUtils.java,288,[CODE_SMELL] java:S1118: Add a private constructor to hide the implicit public one.
+sonarqube,Lang,5,LocaleUtils.java,295,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,11,RandomStringUtils.java,53,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,11,RandomStringUtils.java,223,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.
+sonarqube,Lang,24,NumberUtils.java,41,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,41,"[CODE_SMELL] java:S2129: Remove this ""Long"" constructor"
+sonarqube,Lang,24,NumberUtils.java,43,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,43,"[CODE_SMELL] java:S2129: Remove this ""Long"" constructor"
+sonarqube,Lang,24,NumberUtils.java,45,"[CODE_SMELL] java:S2129: Remove this ""Long"" constructor"
+sonarqube,Lang,24,NumberUtils.java,45,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,47,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,47,"[CODE_SMELL] java:S2129: Remove this ""Integer"" constructor"
+sonarqube,Lang,24,NumberUtils.java,49,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,49,"[CODE_SMELL] java:S2129: Remove this ""Integer"" constructor"
+sonarqube,Lang,24,NumberUtils.java,51,"[CODE_SMELL] java:S2129: Remove this ""Integer"" constructor"
+sonarqube,Lang,24,NumberUtils.java,51,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,53,"[CODE_SMELL] java:S2129: Remove this ""Short"" constructor"
+sonarqube,Lang,24,NumberUtils.java,53,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,55,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,55,"[CODE_SMELL] java:S2129: Remove this ""Short"" constructor"
+sonarqube,Lang,24,NumberUtils.java,57,"[CODE_SMELL] java:S2129: Remove this ""Short"" constructor"
+sonarqube,Lang,24,NumberUtils.java,57,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,65,"[CODE_SMELL] java:S2129: Remove this ""Double"" constructor"
+sonarqube,Lang,24,NumberUtils.java,65,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,67,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,67,"[CODE_SMELL] java:S2129: Remove this ""Double"" constructor"
+sonarqube,Lang,24,NumberUtils.java,69,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,69,"[CODE_SMELL] java:S2129: Remove this ""Double"" constructor"
+sonarqube,Lang,24,NumberUtils.java,71,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,71,"[CODE_SMELL] java:S2129: Remove this ""Float"" constructor"
+sonarqube,Lang,24,NumberUtils.java,73,"[CODE_SMELL] java:S2129: Remove this ""Float"" constructor"
+sonarqube,Lang,24,NumberUtils.java,73,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,75,"[CODE_SMELL] java:S2129: Remove this ""Float"" constructor"
+sonarqube,Lang,24,NumberUtils.java,75,"[CODE_SMELL] java:S5738: Remove this call to a deprecated method, it has been marked for removal."
+sonarqube,Lang,24,NumberUtils.java,84,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,24,NumberUtils.java,452,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 122 to 64, Complexi"
+sonarqube,Lang,24,NumberUtils.java,452,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 89 to the 15 allowed.
+sonarqube,Lang,24,NumberUtils.java,526,"[BUG] java:S2259: A ""NullPointerException"" could be thrown; ""f"" is nullable here."
+sonarqube,Lang,24,NumberUtils.java,540,"[BUG] java:S2259: A ""NullPointerException"" could be thrown; ""d"" is nullable here."
+sonarqube,Lang,24,NumberUtils.java,621,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,24,NumberUtils.java,1319,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 86 to 64, Complexit"
+sonarqube,Lang,24,NumberUtils.java,1319,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 68 to the 15 allowed.
+sonarqube,Lang,24,NumberUtils.java,1332,[CODE_SMELL] java:S1066: Merge this if statement with the enclosing one.
+sonarqube,Lang,33,ClassUtils.java,73,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,89,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,91,"[CODE_SMELL] java:S2864: Iterate over the ""entrySet"" instead of the ""keySet""."
+sonarqube,Lang,33,ClassUtils.java,102,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,107,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,142,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,33,ClassUtils.java,187,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,33,ClassUtils.java,258,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,33,ClassUtils.java,289,[CODE_SMELL] java:S1168: Return an empty collection instead of null.
+sonarqube,Lang,33,ClassUtils.java,291,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,315,[CODE_SMELL] java:S1168: Return an empty collection instead of null.
+sonarqube,Lang,33,ClassUtils.java,318,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,321,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,360,[CODE_SMELL] java:S1168: Return an empty collection instead of null.
+sonarqube,Lang,33,ClassUtils.java,362,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,387,[CODE_SMELL] java:S1168: Return an empty collection instead of null.
+sonarqube,Lang,33,ClassUtils.java,389,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,475,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literal.
+sonarqube,Lang,33,ClassUtils.java,485,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literal.
+sonarqube,Lang,33,ClassUtils.java,554,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.
+sonarqube,Lang,33,ClassUtils.java,581,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literal.
+sonarqube,Lang,33,ClassUtils.java,659,[CODE_SMELL] java:S1168: Return an empty array instead of null.
+sonarqube,Lang,33,ClassUtils.java,709,[CODE_SMELL] java:S1168: Return an empty array instead of null.
+sonarqube,Lang,33,ClassUtils.java,833,[CODE_SMELL] java:S1197: Move the array designators [] to the type.
+sonarqube,Lang,33,ClassUtils.java,841,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Lang,33,ClassUtils.java,845,[CODE_SMELL] java:S135: Reduce the total number of break and continue statements in this loop to use at most one.
+sonarqube,Lang,33,ClassUtils.java,904,[CODE_SMELL] java:S1168: Return an empty array instead of null.
+sonarqube,Lang,33,ClassUtils.java,1020,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.
+sonarqube,Lang,33,ClassUtils.java,1040,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,44,NumberUtils.java,36,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Lang,44,NumberUtils.java,36,[CODE_SMELL] java:S1123: Add the missing @Deprecated annotation.
+sonarqube,Lang,44,NumberUtils.java,46,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,44,NumberUtils.java,138,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 119 to 64, Complexi"
+sonarqube,Lang,44,NumberUtils.java,138,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 84 to the 15 allowed.
+sonarqube,Lang,44,NumberUtils.java,305,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,44,NumberUtils.java,364,"[CODE_SMELL] java:S1488: Immediately return this expression instead of assigning it to the temporary variable ""bi""."
+sonarqube,Lang,44,NumberUtils.java,376,"[CODE_SMELL] java:S1488: Immediately return this expression instead of assigning it to the temporary variable ""bd""."
+sonarqube,Lang,44,NumberUtils.java,593,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,44,NumberUtils.java,617,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 80 to 64, Complexit"
+sonarqube,Lang,44,NumberUtils.java,617,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.
+sonarqube,Lang,44,NumberUtils.java,630,[CODE_SMELL] java:S1066: Merge this if statement with the enclosing one.
+sonarqube,Lang,51,BooleanUtils.java,43,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,51,BooleanUtils.java,65,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,90,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literals.
+sonarqube,Lang,51,BooleanUtils.java,129,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literals.
+sonarqube,Lang,51,BooleanUtils.java,182,"[CODE_SMELL] java:S4144: Update this method so that its implementation is not identical to ""isTrue"" on line 86."
+sonarqube,Lang,51,BooleanUtils.java,186,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literals.
+sonarqube,Lang,51,BooleanUtils.java,206,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literals.
+sonarqube,Lang,51,BooleanUtils.java,226,[CODE_SMELL] java:S1125: Remove the unnecessary boolean literals.
+sonarqube,Lang,51,BooleanUtils.java,265,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,353,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,385,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,392,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,565,"[CODE_SMELL] java:S1192: Define a constant instead of duplicating this literal ""false"" 3 times."
+sonarqube,Lang,51,BooleanUtils.java,577,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,609,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,616,"[CODE_SMELL] java:S2447: Null is returned but a ""Boolean"" is expected."
+sonarqube,Lang,51,BooleanUtils.java,649,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.
+sonarqube,Lang,51,BooleanUtils.java,656,"[BUG] java:S4973: Strings and Boxed types should be compared using ""equals()""."
+sonarqube,Lang,51,BooleanUtils.java,662,[CODE_SMELL] java:S131: Add a default case to this switch.
+sonarqube,Lang,51,BooleanUtils.java,670,"[CODE_SMELL] java:S128: End this switch case with an unconditional break, return or throw statement."
+sonarqube,Lang,51,BooleanUtils.java,702,[CODE_SMELL] java:S125: This block of commented-out lines of code should be removed.
+sonarqube,Lang,58,NumberUtils.java,36,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Lang,58,NumberUtils.java,36,[CODE_SMELL] java:S1123: Add the missing @Deprecated annotation.
+sonarqube,Lang,58,NumberUtils.java,46,[CODE_SMELL] java:S1118: Hide this public constructor.
+sonarqube,Lang,58,NumberUtils.java,138,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 84 to the 15 allowed.
+sonarqube,Lang,58,NumberUtils.java,138,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 119 to 64, Complexi"
+sonarqube,Lang,58,NumberUtils.java,142,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,58,NumberUtils.java,305,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,58,NumberUtils.java,364,"[CODE_SMELL] java:S1488: Immediately return this expression instead of assigning it to the temporary variable ""bi""."
+sonarqube,Lang,58,NumberUtils.java,376,"[CODE_SMELL] java:S1488: Immediately return this expression instead of assigning it to the temporary variable ""bd""."
+sonarqube,Lang,58,NumberUtils.java,593,"[CODE_SMELL] java:S7158: Use ""isEmpty()"" to check whether a ""String"" is empty or not."
+sonarqube,Lang,58,NumberUtils.java,617,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.
+sonarqube,Lang,58,NumberUtils.java,617,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 80 to 64, Complexit"
+sonarqube,Lang,58,NumberUtils.java,630,[CODE_SMELL] java:S1066: Merge this if statement with the enclosing one.
+sonarqube,Math,34,ListPopulation.java,51,"[CODE_SMELL] java:S5993: Change the visibility of this constructor to ""protected""."
+sonarqube,Math,34,ListPopulation.java,64,"[CODE_SMELL] java:S5993: Change the visibility of this constructor to ""protected""."
+sonarqube,Math,34,ListPopulation.java,76,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Math,34,ListPopulation.java,89,[CODE_SMELL] java:S1123: Add the missing @Deprecated annotation.
+sonarqube,Math,34,ListPopulation.java,89,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Math,70,BisectionSolver.java,43,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Math,70,BisectionSolver.java,57,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Math,70,BisectionSolver.java,57,[CODE_SMELL] java:S1123: Add the missing @deprecated Javadoc tag.
+sonarqube,Math,70,BisectionSolver.java,64,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Math,70,BisectionSolver.java,64,[CODE_SMELL] java:S1123: Add the missing @deprecated Javadoc tag.
+sonarqube,Math,73,BrentSolver.java,53,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Math,73,BrentSolver.java,66,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Math,73,BrentSolver.java,66,[CODE_SMELL] java:S1123: Add the missing @deprecated Javadoc tag.
+sonarqube,Math,73,BrentSolver.java,73,[CODE_SMELL] java:S1133: Do not forget to remove this deprecated code someday.
+sonarqube,Math,73,BrentSolver.java,73,[CODE_SMELL] java:S1123: Add the missing @deprecated Javadoc tag.
+sonarqube,Math,73,BrentSolver.java,167,"[CODE_SMELL] java:S1854: Remove this useless assignment to local variable ""ret""."
+sonarqube,Math,73,BrentSolver.java,219,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.
+sonarqube,Math,80,EigenDecompositionImpl.java,85,"[CODE_SMELL] java:S1450: Remove the ""lowerSpectra"" field and declare it as a local variable in the relevant methods."
+sonarqube,Math,80,EigenDecompositionImpl.java,88,"[CODE_SMELL] java:S1450: Remove the ""upperSpectra"" field and declare it as a local variable in the relevant methods."
+sonarqube,Math,80,EigenDecompositionImpl.java,612,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.
+sonarqube,Math,80,EigenDecompositionImpl.java,678,"[CODE_SMELL] java:S1994: Move the update of ""j"" into this loop's update clause."
+sonarqube,Math,80,EigenDecompositionImpl.java,693,"[CODE_SMELL] java:S2293: Replace the type specification in this constructor call with the diamond operator (""<>"")."
+sonarqube,Math,80,EigenDecompositionImpl.java,823,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 79 to 64, Complexit"
+sonarqube,Math,80,EigenDecompositionImpl.java,823,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.
+sonarqube,Math,80,EigenDecompositionImpl.java,991,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.
+sonarqube,Math,80,EigenDecompositionImpl.java,1044,[CODE_SMELL] java:S127: Refactor the code in order to not assign to this loop counter from within the loop body.
+sonarqube,Math,80,EigenDecompositionImpl.java,1054,[CODE_SMELL] java:S1066: Merge this if statement with the enclosing one.
+sonarqube,Math,80,EigenDecompositionImpl.java,1112,[CODE_SMELL] java:S127: Refactor the code in order to not assign to this loop counter from within the loop body.
+sonarqube,Math,80,EigenDecompositionImpl.java,1329,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.
+sonarqube,Math,80,EigenDecompositionImpl.java,1431,"[CODE_SMELL] java:S6541: A ""Brain Method"" was detected. Refactor it to reduce at least one of the following metrics: LOC from 207 to 64, Complexi"
+sonarqube,Math,80,EigenDecompositionImpl.java,1431,[CODE_SMELL] java:S3776: Refactor this method to reduce its Cognitive Complexity from 174 to the 15 allowed.
+sonarqube,Math,80,EigenDecompositionImpl.java,1489,"[CODE_SMELL] java:S1854: Remove this useless assignment to local variable ""b2""."
+sonarqube,Math,80,EigenDecompositionImpl.java,1504,[CODE_SMELL] java:S135: Reduce the total number of break and continue statements in this loop to use at most one.
+sonarqube,Math,80,EigenDecompositionImpl.java,1547,[CODE_SMELL] java:S135: Reduce the total number of break and continue statements in this loop to use at most one.
+sonarqube,Math,106,ProperFractionFormat.java,86,"[CODE_SMELL] java:S1161: Add the ""@Override"" annotation above this method signature"
+sonarqube,Math,106,ProperFractionFormat.java,130,"[CODE_SMELL] java:S1161: Add the ""@Override"" annotation above this method signature"
+ai,Lang,6,CharSequenceTranslator.java,79,Null check returns silently - not the actual bug
+ai,Lang,51,BooleanUtils.java,656,Reference equality (==) flagged but not the ground truth defect at line 681
+ai,Math,30,MannWhitneyUTest.java,183,Flagged z-sign issue but ground truth is int overflow at line 173
+ai,Math,73,BrentSolver.java,115,"Flagged setResult(yMin) storing wrong value, but ground truth is missing bracket validation at line 135"
+ai,Math,73,BrentSolver.java,127,"Flagged setResult(yMax) storing wrong value, but ground truth is missing bracket validation at line 135"
+ai,Math,106,ProperFractionFormat.java,205,Flagged sign-of-zero issue but ground truth is missing negative validation at lines 164-165

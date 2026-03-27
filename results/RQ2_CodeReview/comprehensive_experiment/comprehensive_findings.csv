@@ -1,0 +1,191 @@
+file_id,line,category,description
+Lang-44,46,syntax_style,Public constructor on utility class should be private
+Lang-44,82,quality_warning,Informal notes in production code block comment
+Lang-44,138,quality_warning,createNumber method excessively long (~148 lines)
+Lang-44,150,logic_error,Returning null for -- prefix inconsistent with contract
+Lang-44,160,logic_error,expPos calculation wrong when both e and E present
+Lang-44,195,logic_error,Operator precedence bug in isDigits conditional
+Lang-44,209,quality_warning,Autoboxing for Float/Double creation
+Lang-44,223,logic_error,floatValue() called on Double instead of doubleValue()
+Lang-44,189,logic_error,allZeros check omits decimal part
+Lang-44,317,security,createFloat does not check for null input
+Lang-44,328,security,createDouble does not check for null input
+Lang-44,340,security,createInteger does not check for null input
+Lang-44,352,security,createLong does not check for null input
+Lang-44,363,security,createBigInteger does not check for null input
+Lang-44,375,security,createBigDecimal does not check for null input
+Lang-44,364,quality_warning,Unnecessary local variable in createBigInteger
+Lang-44,376,quality_warning,Unnecessary local variable in createBigDecimal
+Lang-44,628,syntax_style,isNumber does not handle leading + sign
+Lang-59,82,code_smell,serialVersionUID declared but class does not implement Serializable
+Lang-59,75,syntax_style,CAPACITY constant has package-private visibility should be private
+Lang-59,85,code_smell,Protected mutable fields buffer and size expose internal state
+Lang-59,884,logic_error,appendFixedWidthPadRight copies strLen chars instead of width chars
+Lang-59,837,security,appendFixedWidthPadLeft NPE if obj null and getNullText returns null
+Lang-59,881,security,appendFixedWidthPadRight NPE if obj null and getNullText returns null
+Lang-59,1,quality_warning,File is 2364 lines - overly large class
+Lang-59,2258,syntax_style,Boolean comparison ready()==false should use !ready()
+Lang-59,2240,syntax_style,Inner class Javadoc says writer but it is a Reader
+Lang-33,142,syntax_style,Public constructor on utility class should be private
+Lang-33,908,code_smell,Raw generic type: new Class[array.length] without parameterization
+Lang-33,910,logic_error,array[i].getClass() throws NPE when element is null
+Lang-33,1021,logic_error,deleteWhitespace called before null check on className
+Lang-33,83,quality_warning,Void.TYPE maps to itself inconsistent with other primitive mappings
+Lang-33,73,syntax_style,Map declarations missing diamond operator
+Lang-33,102,syntax_style,Map declarations missing diamond operator
+Lang-21,157,syntax_style,Public constructor on utility class should be private
+Lang-21,265,logic_error,Uses Calendar.HOUR instead of HOUR_OF_DAY for 24h comparison
+Lang-21,86,syntax_style,Modifier order public final static should be public static final
+Lang-21,103,syntax_style,Modifier order public final static should be public static final
+Lang-21,146,syntax_style,Missing space before = in MODIFY_CEILING=2
+Lang-21,88,code_smell,Private field mutable 2D array should be made unmodifiable
+Lang-21,1,quality_warning,File is 1871 lines - overly large class
+Lang-21,1813,quality_warning,Typo in error message milleseconds
+Lang-21,254,quality_warning,Javadoc misleading says millisecond instant but compares fields
+Lang-51,43,syntax_style,Public constructor on utility class should be private
+Lang-51,656,logic_error,Reference equality == instead of .equals() for String
+Lang-51,682,logic_error,Missing break in case 3 causes fallthrough to case 4
+Lang-51,90,quality_warning,Redundant bool.booleanValue() ? true : false
+Lang-51,129,quality_warning,Redundant bool.booleanValue() ? false : true
+Lang-51,152,syntax_style,Javadoc typo objecs should be objects
+Lang-51,702,quality_warning,Commented-out main method in production code
+Lang-51,966,code_smell,Using exception handling for control flow anti-pattern
+Lang-51,1,quality_warning,File is 972 lines with repetitive overloads
+Chart-1,1798,logic_error,Inverted null check dataset != null should be == null
+Chart-1,1800,security,Null pointer dereference when dataset is null
+Chart-1,226,code_smell,Raw type List backgroundAnnotations
+Chart-1,234,code_smell,Raw type List foregroundAnnotations
+Chart-1,194,code_smell,Raw type ObjectList for itemLabelGeneratorList
+Chart-1,200,code_smell,Raw type ObjectList for toolTipGeneratorList
+Chart-1,206,code_smell,Raw type ObjectList for urlGeneratorList
+Chart-1,255,code_smell,Raw type new ArrayList() should be parameterized
+Chart-1,256,code_smell,Raw type new ArrayList() should be parameterized
+Chart-1,1531,quality_warning,hashCode only delegates to super without incorporating fields
+Chart-1,1680,syntax_style,Missing @Override on clone()
+Chart-1,1660,code_smell,Throws RuntimeException instead of IllegalArgumentException
+Chart-1,1916,code_smell,Throws RuntimeException instead of UnsupportedOperationException
+Chart-1,1937,syntax_style,Incomplete Javadoc on createHotSpotBounds
+Chart-1,1963,syntax_style,Incomplete Javadoc on hitTest
+Chart-1,183,quality_warning,Class nearly 2000 lines - god class
+Chart-1,1180,quality_warning,drawRangeMarker extremely long with high complexity
+Chart-1,1979,quality_warning,hitTest has 11 parameters excessive
+Chart-1,1912,quality_warning,createHotSpotShape has 10 parameters excessive
+Chart-1,1954,quality_warning,Magic numbers 2 and 4 in setRect without constants
+Chart-17,857,logic_error,clone calls createCopy(0 -1) on empty series throws exception
+Chart-17,118,code_smell,Raw type Class timePeriodClass
+Chart-17,121,code_smell,Raw type List data
+Chart-17,176,code_smell,Raw type new ArrayList()
+Chart-17,884,code_smell,Raw type new ArrayList() in createCopy
+Chart-17,944,code_smell,Raw type new ArrayList() in createCopy
+Chart-17,407,code_smell,Raw type Collection result
+Chart-17,856,syntax_style,Missing @Override on clone()
+Chart-17,960,syntax_style,Missing @Override on equals()
+Chart-17,1009,syntax_style,Missing @Override on hashCode()
+Chart-17,893,quality_warning,Catch block uses e.printStackTrace instead of logging
+Chart-17,433,code_smell,Raw type Collections.binarySearch on raw List
+Chart-17,517,code_smell,Raw type Collections.binarySearch on raw List
+Chart-17,152,code_smell,Raw type constructor parameter Class timePeriodClass
+Chart-12,145,logic_error,Constructor does not register change listener on dataset
+Chart-12,117,code_smell,Raw type Comparable aggregatedItemsKey
+Chart-12,129,code_smell,Raw type transient Map sectionPaints
+Chart-12,157,code_smell,Raw type new HashMap()
+Chart-12,514,code_smell,Raw type List keys
+Chart-12,526,code_smell,Raw type Iterator
+Chart-12,561,syntax_style,Missing @Override on equals()
+Chart-12,329,syntax_style,Missing @Override on getPlotType()
+Chart-12,344,syntax_style,Missing @Override on draw()
+Chart-12,509,syntax_style,Missing @Override on getLegendItems()
+Chart-12,525,quality_warning,Unused variable section incremented but never read
+Chart-12,96,code_smell,Serializable class has transient Map not handled in readObject
+Chart-12,344,quality_warning,draw() method long with high cyclomatic complexity
+Chart-12,385,quality_warning,Magic number casting double to int truncation
+Chart-7,300,logic_error,Uses minMiddleIndex instead of maxMiddleIndex
+Chart-7,88,code_smell,Raw type List data
+Chart-7,132,code_smell,Raw type new ArrayList()
+Chart-7,500,code_smell,Raw type new ArrayList() in createCopy
+Chart-7,73,syntax_style,serialVersionUID missing private modifier
+Chart-7,414,syntax_style,Missing @Override on equals()
+Chart-7,450,syntax_style,Missing @Override on hashCode()
+Chart-7,479,syntax_style,Missing @Override on clone()
+Chart-7,509,quality_warning,Catch block writes to System.err instead of logging
+Chart-7,257,quality_warning,updateBounds method long with repetitive structure
+Chart-7,348,code_smell,Raw type unchecked cast from raw List
+Chart-11,275,logic_error,Copy-paste: p1.getPathIterator used for p2 iterator
+Chart-11,107,quality_warning,Empty catch block swallows CloneNotSupportedException
+Chart-11,110,quality_warning,Redundant code: Shape result = null then return result
+Chart-11,256,syntax_style,Javadoc says polygons but method tests GeneralPath
+Chart-11,127,code_smell,instanceof chain violates Open/Closed principle
+Chart-11,79,code_smell,Utility class not declared final
+Math-59,3482,logic_error,Returns b instead of a in float max function
+Math-59,3494,quality_warning,File is 3494 lines extremely high complexity
+Math-59,126,syntax_style,RECIP_2PI array not declared final
+Math-59,147,syntax_style,PI_O_4_BITS array not declared final
+Math-59,35,syntax_style,C-style array declaration throughout class
+Math-59,40,syntax_style,C-style array declaration EXP_INT_TABLE_B
+Math-59,45,syntax_style,C-style array declaration EXP_FRAC_TABLE_A
+Math-59,50,syntax_style,C-style array declaration EXP_FRAC_TABLE_B
+Math-59,53,syntax_style,C-style array declaration FACT
+Math-59,56,syntax_style,C-style array declaration LN_MANT
+Math-59,65,syntax_style,C-style array declaration LN_SPLIT_COEF
+Math-59,85,syntax_style,C-style array declaration LN_QUICK_COEF
+Math-59,98,syntax_style,C-style array declaration LN_HI_PREC_COEF
+Math-59,108,syntax_style,C-style array declaration SINE_TABLE_A and similar
+Math-59,155,syntax_style,C-style array declaration EIGHTHES
+Math-59,248,quality_warning,Magic number 1073741824.0 used repeatedly without constant
+Math-59,231,quality_warning,Magic number 20.0 threshold without constant
+Math-59,713,quality_warning,Magic numbers in minimax polynomial without documentation
+Math-59,1551,quality_warning,Magic number 4503599627370496.0 without constant
+Math-59,1566,quality_warning,Magic number 8e298 threshold without constant
+Math-59,2824,quality_warning,Pi computed inline rather than named constant
+Math-59,3237,logic_error,abs(int) incorrect for Integer.MIN_VALUE overflow
+Math-59,3246,logic_error,abs(long) incorrect for Long.MIN_VALUE overflow
+Math-59,3255,security,abs(float) does not handle -0.0f correctly
+Math-59,3264,security,abs(double) does not handle -0.0 correctly
+Math-59,166,syntax_style,Loop variable declared outside loop scope
+Math-79,1624,logic_error,int sum overflow in distance squared calculation
+Math-79,1623,syntax_style,Inconsistent indentation 6-space vs 8-space
+Math-79,1607,security,distance(double[]) no array length equality check
+Math-79,1623,security,distance(int[]) no array length equality check
+Math-79,1592,security,distance1(int[]) int accumulator can overflow
+Math-79,1654,security,distanceInf(int[]) Math.abs overflow for extreme values
+Math-79,1577,security,distance1(double[]) no array length validation
+Math-79,1639,security,distanceInf(double[]) no array length validation
+Math-79,70,quality_warning,FACTORIALS uses lowercase l suffix confusable with 1
+Math-79,1663,quality_warning,File 1663 lines very large utility class
+Math-80,1135,logic_error,Off-by-one 4*n-1 vs 4*(n-1) in flipIfWarranted
+Math-80,1133,quality_warning,Magic number 1.5 threshold without explanation
+Math-80,1843,quality_warning,File 1843 lines very high complexity
+Math-80,823,quality_warning,processGeneralBlock ~300 lines deep nesting
+Math-80,175,syntax_style,Typo assymetric should be asymmetric
+Math-80,217,quality_warning,Magic number 10 in epsilon calculation
+Math-80,887,quality_warning,Magic number 30 for maxIter
+Math-80,1105,quality_warning,Magic number 0.25 in goodStep
+Math-80,1101,quality_warning,Magic number 2.0 in epsilon calc
+Math-80,64,quality_warning,Magic number 100 in TOLERANCE
+Math-80,115,syntax_style,Extra spaces in declaration for alignment
+Math-80,61,code_smell,20+ mutable instance fields high coupling low cohesion
+Math-80,136,syntax_style,Single-letter field name g non-descriptive
+Math-80,240,quality_warning,Magic multiplier 6 in array allocation
+Math-75,303,logic_error,getPct(Object) calls getCumPct instead of getPct
+Math-75,82,quality_warning,Uses StringBuffer instead of StringBuilder unnecessary sync
+Math-75,112,security,addValue does not null-check parameter v
+Math-75,232,security,getCount unchecked cast without type check
+Math-75,368,security,getCumFreq unchecked cast without null/type check
+Math-75,474,security,getCumPct unchecked cast without null/type check
+Math-75,541,code_smell,NaturalComparator uses raw type with unchecked cast
+Math-75,559,syntax_style,SuppressWarnings on genuinely unsafe cast
+Math-75,167,syntax_style,Deprecated method missing @Deprecated annotation
+Math-75,381,syntax_style,Incorrect indentation on getCumFreq method
+Math-75,578,syntax_style,Inconsistent if-without-braces pattern
+Math-75,214,quality_warning,getSumFreq iterates all values every call should cache
+Math-75,54,code_smell,TreeMap wildcard generic weakens type safety
+Math-41,520,logic_error,Loop iterates from 0 instead of begin parameter
+Math-41,75,syntax_style,Protected field moment should be private
+Math-41,84,syntax_style,Protected field incMoment should be private
+Math-41,179,syntax_style,Inconsistent indentation in getResult
+Math-41,69,quality_warning,8 overloaded evaluate methods high API complexity
+Math-41,263,quality_warning,Creates new Mean object on every call
+Math-41,323,quality_warning,Creates new Mean object on every call
+Math-41,416,quality_warning,Variable len is double but represents integer count
+Math-41,195,syntax_style,Missing @Override annotation on getN
+Math-41,510,quality_warning,Magic number 1.0 as bias correction without explanation

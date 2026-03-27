@@ -1,0 +1,156 @@
+===============================================================================
+DEFECTS4J EXPERIMENT: SonarQube vs AI Code Review Detection Comparison
+===============================================================================
+Date: 2026-03-27
+Projects: Apache Commons Lang, JFreeChart, Apache Commons Math
+Defects4J version: 3.x
+SonarQube version: Community Edition (latest Docker image)
+AI Reviewer: Claude Opus 4.6
+
+===============================================================================
+1. GROUND TRUTH: BUGS PER CATEGORY
+===============================================================================
+
+Category          Count    Percentage
+-----------       -----    ----------
+logic_error         29       72.5%
+security             6       15.0%
+code_smell           5       12.5%
+syntax_style         0        0.0%
+-----------       -----    ----------
+TOTAL               40      100.0%
+
+Note: Defects4J contains exclusively functional bugs that cause test failures.
+Pure syntax/style issues do not exist in this dataset. The distribution is
+heavily skewed toward logic_error, which honestly reflects the nature of
+real-world verified bugs in these projects.
+
+Bugs per project:
+  Lang:   15 bugs
+  Chart:  10 bugs
+  Math:   15 bugs
+
+===============================================================================
+2. DETECTION COUNT PER CATEGORY PER TOOL
+===============================================================================
+
+                    SonarQube              AI Review
+Category        Detected  Total       Detected  Total
+-----------     --------  -----       --------  -----
+logic_error        1       29            26       29
+security           1        6             2        6
+code_smell         0        5             5        5
+syntax_style       0        0             0        0
+-----------     --------  -----       --------  -----
+TOTAL              2       40            33       40
+
+===============================================================================
+3. DETECTION RATE (%) PER CATEGORY PER TOOL
+===============================================================================
+
+Category          SonarQube    AI Review
+-----------       ---------    ---------
+logic_error          3.4%       89.7%
+security            16.7%       33.3%
+code_smell           0.0%      100.0%
+syntax_style          N/A        N/A
+-----------       ---------    ---------
+OVERALL              5.0%       82.5%
+
+===============================================================================
+4. TOTAL DETECTION RATE PER TOOL
+===============================================================================
+
+Tool            True Positives    False Negatives    Detection Rate
+-----------     --------------    ---------------    --------------
+SonarQube              2                38               5.0%
+AI Review             33                 7              82.5%
+
+===============================================================================
+5. FALSE POSITIVES PER TOOL
+===============================================================================
+
+Tool            False Positives (in buggy files)    Notes
+-----------     --------------------------------    -----
+SonarQube                   179                     Issues flagged in the specific
+                                                    buggy files but NOT at/near
+                                                    the actual bug location
+AI Review                     6                     Findings outside ±2 lines of
+                                                    ground truth bug location
+
+Note: SonarQube reported thousands of issues across full project scans
+(ranging from 522 to 4717 per project version). The 179 figure counts
+only issues in the specific buggy files that were not near the ground
+truth defect. Several Chart and Math project scans returned 0 issues
+for the specific buggy files (the issues were in other files).
+
+===============================================================================
+6. DETAILED NOTES ON SONARQUBE DETECTIONS
+===============================================================================
+
+The two SonarQube "detections" were COINCIDENTAL near-line matches, not
+semantic detections of the actual bugs:
+
+1. Lang-44 (security): SonarQube flagged line 142 with rule java:S7158
+   "Use isEmpty() to check whether a String is empty or not."
+   This is a style suggestion about using isEmpty() vs length()==0,
+   NOT a detection of the missing single-character validation bug at line 144.
+
+2. Math-70 (logic_error): SonarQube flagged line 72 with rule java:S1874
+   "Remove this use of solve; it is deprecated."
+   This flags deprecated API usage, NOT the actual bug of calling
+   solve(min, max) instead of solve(f, min, max).
+
+Neither detection represents SonarQube actually understanding the semantic
+defect. Both are coincidences where an unrelated style/deprecation issue
+happened to be within ±2 lines of the actual bug.
+
+===============================================================================
+7. AI REVIEW MISSED BUGS
+===============================================================================
+
+1. Chart-9 (logic_error): AI identified issues in createCopy method
+   but misdiagnosed the specific defect (missing endIndex < startIndex
+   check at line 944). Found wrong issue in right method.
+
+2. Math-5 (logic_error): AI noted the NaN return for reciprocal of zero
+   but considered it "defensible" rather than flagging it as a defect.
+   The correct behavior is to return INF.
+
+3. Math-73 (security): AI found real bugs at lines 115 and 127
+   (setResult storing function values instead of x-coordinates) but
+   missed the ground truth defect at line 135 (missing bracket
+   validation). Found different bugs in the same method.
+
+4. Math-106 (security): AI found a sign-of-zero issue at line 205 but
+   missed the ground truth defect at lines 164-165 (missing negative
+   number validation for numerator/denominator).
+
+===============================================================================
+8. KEY OBSERVATIONS
+===============================================================================
+
+- SonarQube is fundamentally a pattern-based static analysis tool optimized
+  for code quality metrics, style enforcement, and known vulnerability
+  patterns. It is NOT designed to detect semantic logic errors, which
+  constitute the vast majority (72.5%) of real-world bugs in Defects4J.
+
+- The AI reviewer demonstrated strong capability in understanding code
+  semantics, identifying logic errors, and reasoning about edge cases.
+  It achieved 89.7% detection on logic errors and 100% on code smells.
+
+- The AI reviewer's false positive rate was significantly lower (6 vs 179),
+  suggesting more targeted and precise analysis.
+
+- The AI reviewer's main weakness was in security-category bugs (33.3%),
+  where the missing input validations were sometimes not flagged as defects
+  because the reviewer focused on the functional logic within the method
+  rather than what inputs the method should reject.
+
+- Both tools struggled with bugs where the fix involves adding entirely
+  new validation that has no trace in the buggy code (e.g., adding a
+  bracket check where none existed before).
+
+===============================================================================
+END OF SUMMARY
+===============================================================================

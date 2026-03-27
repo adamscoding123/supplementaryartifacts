@@ -1,0 +1,83 @@
+tool,project,file,line,description
+ai,Lang,NumberUtils.java,160,expPos calculation wrong when both e and E present
+ai,Lang,NumberUtils.java,195,Operator precedence bug in isDigits conditional
+ai,Lang,NumberUtils.java,209,Autoboxing for Float/Double creation
+ai,Lang,NumberUtils.java,223,floatValue() called on Double instead of doubleValue()
+ai,Lang,NumberUtils.java,189,allZeros check omits decimal part
+ai,Lang,NumberUtils.java,317,createFloat does not check for null input
+ai,Lang,NumberUtils.java,328,createDouble does not check for null input
+ai,Lang,NumberUtils.java,340,createInteger does not check for null input
+ai,Lang,NumberUtils.java,352,createLong does not check for null input
+ai,Lang,StrBuilder.java,82,serialVersionUID declared but class does not implement Serializable
+ai,Lang,StrBuilder.java,75,CAPACITY constant has package-private visibility should be private
+ai,Lang,StrBuilder.java,85,Protected mutable fields buffer and size expose internal state
+ai,Lang,StrBuilder.java,837,appendFixedWidthPadLeft NPE if obj null and getNullText returns null
+ai,Lang,StrBuilder.java,881,appendFixedWidthPadRight NPE if obj null and getNullText returns null
+ai,Lang,StrBuilder.java,1,File is 2364 lines - overly large class
+ai,Lang,StrBuilder.java,2240,Inner class Javadoc says writer but it is a Reader
+ai,Lang,ClassUtils.java,83,Void.TYPE maps to itself inconsistent with other primitive mappings
+ai,Lang,DateUtils.java,1,File is 1871 lines - overly large class
+ai,Lang,DateUtils.java,1813,Typo in error message milleseconds
+ai,Lang,DateUtils.java,254,Javadoc misleading says millisecond instant but compares fields
+ai,Lang,BooleanUtils.java,152,Javadoc typo objecs should be objects
+ai,Lang,BooleanUtils.java,966,Using exception handling for control flow anti-pattern
+ai,Lang,BooleanUtils.java,1,File is 972 lines with repetitive overloads
+ai,Chart,AbstractCategoryItemRenderer.java,194,Raw type ObjectList for itemLabelGeneratorList
+ai,Chart,AbstractCategoryItemRenderer.java,200,Raw type ObjectList for toolTipGeneratorList
+ai,Chart,AbstractCategoryItemRenderer.java,206,Raw type ObjectList for urlGeneratorList
+ai,Chart,AbstractCategoryItemRenderer.java,1937,Incomplete Javadoc on createHotSpotBounds
+ai,Chart,AbstractCategoryItemRenderer.java,1963,Incomplete Javadoc on hitTest
+ai,Chart,AbstractCategoryItemRenderer.java,183,Class nearly 2000 lines - god class
+ai,Chart,AbstractCategoryItemRenderer.java,1979,hitTest has 11 parameters excessive
+ai,Chart,AbstractCategoryItemRenderer.java,1912,createHotSpotShape has 10 parameters excessive
+ai,Chart,AbstractCategoryItemRenderer.java,1954,Magic numbers 2 and 4 in setRect without constants
+ai,Chart,TimeSeries.java,893,Catch block uses e.printStackTrace instead of logging
+ai,Chart,TimeSeries.java,433,Raw type Collections.binarySearch on raw List
+ai,Chart,TimeSeries.java,517,Raw type Collections.binarySearch on raw List
+ai,Chart,MultiplePiePlot.java,385,Magic number casting double to int truncation
+ai,Chart,TimePeriodValues.java,73,serialVersionUID missing private modifier
+ai,Chart,TimePeriodValues.java,348,Raw type unchecked cast from raw List
+ai,Chart,ShapeUtilities.java,256,Javadoc says polygons but method tests GeneralPath
+ai,Chart,ShapeUtilities.java,79,Utility class not declared final
+ai,Math,FastMath.java,3494,File is 3494 lines extremely high complexity
+ai,Math,FastMath.java,248,Magic number 1073741824.0 used repeatedly without constant
+ai,Math,FastMath.java,231,Magic number 20.0 threshold without constant
+ai,Math,FastMath.java,713,Magic numbers in minimax polynomial without documentation
+ai,Math,FastMath.java,1551,Magic number 4503599627370496.0 without constant
+ai,Math,FastMath.java,1566,Magic number 8e298 threshold without constant
+ai,Math,FastMath.java,2824,Pi computed inline rather than named constant
+ai,Math,FastMath.java,3237,abs(int) incorrect for Integer.MIN_VALUE overflow
+ai,Math,FastMath.java,3246,abs(long) incorrect for Long.MIN_VALUE overflow
+ai,Math,FastMath.java,3255,abs(float) does not handle -0.0f correctly
+ai,Math,FastMath.java,3264,abs(double) does not handle -0.0 correctly
+ai,Math,FastMath.java,166,Loop variable declared outside loop scope
+ai,Math,MathUtils.java,1607,distance(double[]) no array length equality check
+ai,Math,MathUtils.java,1592,distance1(int[]) int accumulator can overflow
+ai,Math,MathUtils.java,1654,distanceInf(int[]) Math.abs overflow for extreme values
+ai,Math,MathUtils.java,1577,distance1(double[]) no array length validation
+ai,Math,MathUtils.java,1639,distanceInf(double[]) no array length validation
+ai,Math,MathUtils.java,70,FACTORIALS uses lowercase l suffix confusable with 1
+ai,Math,MathUtils.java,1663,File 1663 lines very large utility class
+ai,Math,EigenDecompositionImpl.java,1843,File 1843 lines very high complexity
+ai,Math,EigenDecompositionImpl.java,175,Typo assymetric should be asymmetric
+ai,Math,EigenDecompositionImpl.java,217,Magic number 10 in epsilon calculation
+ai,Math,EigenDecompositionImpl.java,887,Magic number 30 for maxIter
+ai,Math,EigenDecompositionImpl.java,1105,Magic number 0.25 in goodStep
+ai,Math,EigenDecompositionImpl.java,1101,Magic number 2.0 in epsilon calc
+ai,Math,EigenDecompositionImpl.java,64,Magic number 100 in TOLERANCE
+ai,Math,EigenDecompositionImpl.java,115,Extra spaces in declaration for alignment
+ai,Math,EigenDecompositionImpl.java,61,20+ mutable instance fields high coupling low cohesion
+ai,Math,EigenDecompositionImpl.java,136,Single-letter field name g non-descriptive
+ai,Math,EigenDecompositionImpl.java,240,Magic multiplier 6 in array allocation
+ai,Math,Frequency.java,541,NaturalComparator uses raw type with unchecked cast
+ai,Math,Frequency.java,559,SuppressWarnings on genuinely unsafe cast
+ai,Math,Frequency.java,381,Incorrect indentation on getCumFreq method
+ai,Math,Frequency.java,578,Inconsistent if-without-braces pattern
+ai,Math,Frequency.java,214,getSumFreq iterates all values every call should cache
+ai,Math,Variance.java,75,Protected field moment should be private
+ai,Math,Variance.java,84,Protected field incMoment should be private
+ai,Math,Variance.java,179,Inconsistent indentation in getResult
+ai,Math,Variance.java,263,Creates new Mean object on every call
+ai,Math,Variance.java,323,Creates new Mean object on every call
+ai,Math,Variance.java,416,Variable len is double but represents integer count
+ai,Math,Variance.java,195,Missing @Override annotation on getN
